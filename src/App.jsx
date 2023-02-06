@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
+
     <BrowserRouter>
     <Navbar />
     <Routes>
@@ -21,7 +22,7 @@ function App() {
     </Routes>
     <Footer />
     </BrowserRouter>
-
+    
   )
 }
 
