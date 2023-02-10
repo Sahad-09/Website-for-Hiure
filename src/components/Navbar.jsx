@@ -1,39 +1,56 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { useState } from 'react'
+import MenuItems from './MenuItems'
 
 function Navbar() {
+
+  const [active, setActive] = useState(false)
+
+  function showMenu(){
+    setActive(!active)
+  }
+
+  const showCloseIcon = document.getElementById("showCloseIcon")
+  
+
+
+
   return (
     <>
     {/* {Mobile} */}
-    <nav className=' md:hidden w-[95%] mx-auto pt-2'>
+    <header className=' bg-white my-3 mx-2 shadow-md rounded-md'>
+    <nav className='  md:hidden w-[95%] mx-auto pt-2'>
       <div className=' flex flex-row items-center justify-between'>
-        <img className=" h-16" src="src\Assests\navIcon.avif" alt="" srcset="" />
-        <img className=' relative mt-[-10px]'  src="src/Assests/menu-icon.svg" />
-      </div>
-    </nav>
-    {/* {Desktop} */}
-    <header className=' md:block hidden'>
-    <nav className='w-[95%] mx-auto pt-2 flex flex-row justify-between items-center'>
-      <div className=' flex items-center gap-5'>
-        <img className=" h-16 " src="src\Assests\navIcon.avif" alt="" srcset="" />
-        <span>Hiure</span>
-      </div> 
-      <div className=' flex gap-5'>
-        <NavLink to='/about'><a><button className="btn btn-active btn-ghost">About</button></a></NavLink>
-        <NavLink to='/blog'><a><button className="btn btn-active btn-ghost">Blog</button></a></NavLink>
-        <NavLink to='/projects'><a><button className="btn btn-active btn-ghost">Projects</button></a></NavLink>
-        <NavLink to='/contact'><a><button className="btn btn-active btn-ghost">Conatct</button></a></NavLink>
+        <img className=" h-16" src="src/Assests/navIcon.avif" alt="" srcset="" />
+        <button id='showCloseIcon'  onClick={showMenu} ><img className=' z-10 relative mt-[-10px]'  src="src/Assests/open-menu.svg" /></button>
+        
       </div>
     </nav>
     </header>
+
+    <MenuItems showMenu={showMenu} active={active} />
+
+
+    {/* {Desktop} */}
+    <header className=' bg-white my-3 mx-2 shadow-md rounded-md md:block hidden'>
+    <nav className=' w-[95%] mx-auto pt-2 flex flex-row justify-between items-center'>
+      <div className=' flex items-center gap-5'>
+        <a href="/"><img href="/" className=" h-16 " src="src\Assests\navIcon.avif" alt="" srcset="" /></a>
+        <span className=' text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 font-semibold text-3xl'>Hiure</span>
+      </div> 
+      <div className=' flex gap-5'>
+        <NavLink   to='/about'><a><button activeClassName="active" className="  active:bg-white btn btn-active btn-ghost ">About</button></a></NavLink>
+        <NavLink to='/blog'><a><button className="  active:bg-white btn btn-active btn-ghost">Blog</button></a></NavLink>
+        <NavLink to='/projects'><a><button className=" active:bg-white btn btn-active btn-ghost">Projects</button></a></NavLink>
+        <NavLink to='/contact'><a><button className="  active:bg-white btn btn-active btn-ghost">Conatct</button></a></NavLink>
+      </div>
+    </nav>
+    </header>
+
 
     </>
   )
 }
 
 export default Navbar
-
-
-{/* <img className=" h-12 items-center" src="src\Assests\navIcon.avif" alt="" srcset="" />
-<span class=" hidden ml-3 text-xl">Hiure</span>
-<img src="src/Assests/menu-icon.svg" alt="" className=' ' /> */}

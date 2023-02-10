@@ -7,9 +7,11 @@ import Blog from './Blog'
 import Projects from './Projects'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import { useState } from 'react'
 
 
 function App() {
+
   return (
 
     <BrowserRouter>
