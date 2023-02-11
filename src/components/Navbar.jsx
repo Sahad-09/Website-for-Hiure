@@ -10,8 +10,6 @@ function Navbar() {
   function showMenu(){
     setActive(!active)
   }
-
-  const showCloseIcon = document.getElementById("showCloseIcon")
   
 
 
@@ -23,7 +21,7 @@ function Navbar() {
     <nav className='  md:hidden w-[95%] mx-auto pt-2'>
       <div className=' flex flex-row items-center justify-between'>
         <img className=" h-16" src="src/Assests/navIcon.avif" alt="" srcset="" />
-        <button id='showCloseIcon'  onClick={showMenu} ><img className=' z-10 relative mt-[-10px]'  src="src/Assests/open-menu.svg" /></button>
+        <button  onClick={showMenu} ><img className=' z-10 relative mt-[-10px]'  src="src/Assests/open-menu.svg" /></button>
         
       </div>
     </nav>
@@ -40,10 +38,10 @@ function Navbar() {
         <span className=' text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 font-semibold text-3xl'>Hiure</span>
       </div> 
       <div className=' flex gap-5'>
-        <NavLink   to='/about'><a><button activeClassName="active" className="  active:bg-white btn btn-active btn-ghost ">About</button></a></NavLink>
-        <NavLink to='/blog'><a><button className="  active:bg-white btn btn-active btn-ghost">Blog</button></a></NavLink>
-        <NavLink to='/projects'><a><button className=" active:bg-white btn btn-active btn-ghost">Projects</button></a></NavLink>
-        <NavLink to='/contact'><a><button className="  active:bg-white btn btn-active btn-ghost">Conatct</button></a></NavLink>
+        <NavLink to='/about'><a class="nav-link nav-link-ltr">About</a></NavLink>
+        <NavLink to='/blog'><a class="nav-link nav-link-ltr">Blog</a></NavLink>
+        <NavLink to='/projects'><a class="nav-link nav-link-ltr">Projects</a></NavLink>
+        <NavLink to='/contact'><a class="nav-link nav-link-ltr">Contact</a></NavLink>
       </div>
     </nav>
     </header>

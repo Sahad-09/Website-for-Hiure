@@ -8,6 +8,7 @@ import Projects from './Projects'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { useState } from 'react'
+import Home from './Home'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Route path='/blog' element={<Blog />}/>
       <Route path='/projects' element={<Projects />}/>
       <Route path='/contact' element={<Contact />}/>
+      <Route path='/' element={<Home />}/>
     </Routes>
     <Footer />
     </BrowserRouter>
