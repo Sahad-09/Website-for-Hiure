@@ -1,6 +1,6 @@
 # Website-for-Hiure
 
-1. **Install Modules or any dependencies.**
+1. **Install Modules.**
 
    ```bash
    npm install
