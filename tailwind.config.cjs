@@ -9,6 +9,10 @@ module.exports = {
       fontFamily: {
         Roboto: ['Roboto'] 
       },
+      backgroundImage: {
+        'hero-image': 'url("https://media2.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif?cid=ecf05e47f3he0zzdgm0d3nlf2soxejgz68uixnxvuf49kj05&rid=giphy.gif&ct=g")'
+
+      },
     },
   },
   plugins: [require("daisyui")],

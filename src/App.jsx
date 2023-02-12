@@ -14,7 +14,7 @@ import Home from './Home'
 function App() {
 
   return (
-
+    
     <BrowserRouter>
     <Navbar />
     <Routes>
@@ -26,6 +26,7 @@ function App() {
     </Routes>
     <Footer />
     </BrowserRouter>
+
     
   )
 }

@@ -5,8 +5,9 @@ import { NavLink } from "react-router-dom";
 function Home() {
   return (
     <>
-      <div className="md:px-10 p-20 relative">
-        <div className="flex lg:flex-row lg:justify-evenly lg:py-20 justify-evenly sm:gap-12 py-10 md:flex-col-reverse sm:flex-col-reverse items-center md:gap-12 gap-12 flex-col-reverse">
+    <div className=" md:px-10 p-10">
+        <div className="flex lg:flex-row lg:justify-evenly lg:py-20 justify-evenly
+         sm:gap-12 py-10 md:flex-col-reverse sm:flex-col-reverse items-center md:gap-12 gap-12 flex-col-reverse">
           <div className="">
             <div className="font-extrabold typewriter">
               <h1 className="lg:text-4xl text-2xl text-left">I am Hiure Queiroz</h1>
@@ -25,6 +26,7 @@ function Home() {
           </div>
         </div>
       </div>
+
     </>
   );
 }

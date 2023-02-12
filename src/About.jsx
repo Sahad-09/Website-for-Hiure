@@ -3,7 +3,9 @@ import React from 'react'
 function About() {
   return (
     <>
-      <h1 className=" text-7xl bg-green-500">Hello i'm About page</h1>
+      <div className=' rounded-sm shadow-sm  mx-auto bg-white w-[95%] min-h-screen '>
+        {/* Write your code here   */}
+      </div>
     </>
   )
 }
