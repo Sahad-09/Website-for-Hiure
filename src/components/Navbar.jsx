@@ -21,7 +21,7 @@ function Navbar() {
     <nav className='  md:hidden w-[95%] mx-auto pt-2'>
       <div className=' flex flex-row items-center justify-between'>
         <img className=" h-16" src="src/Assests/navIcon.avif" alt="" srcset="" />
-        <button  onClick={showMenu} ><img className=' z-20 relative mt-[-10px]'  src="src/Assests/open-menu.svg" /></button>
+        <button  onClick={showMenu} ><img className=' z-20 relative mt-[-10px]'  src="src/Assests/Navbar/open-menu.svg" /></button>
         
       </div>
     </nav>
@@ -34,7 +34,7 @@ function Navbar() {
     <header className=' sticky top-[0.5rem] z-50 bg-white my-3 mx-2 shadow-md rounded-md md:block hidden'>
     <nav className='   w-[95%] mx-auto pt-2 flex flex-row justify-between items-center'>
       <div className=' flex items-center gap-5'>
-        <a href="/"><img href="/" className=" h-16 " src="src\Assests\navIcon.avif" alt="" srcset="" /></a>
+        <a href="/"><img href="/" className=" h-16 " src="src/Assests/Navbar/navIcon.avif" alt="" srcset="" /></a>
         <span className=' text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 font-semibold text-3xl'>Hiure</span>
       </div> 
       <div className=' flex gap-5'>
