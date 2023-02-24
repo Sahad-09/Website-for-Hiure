@@ -10,7 +10,6 @@ function Navbar() {
   function showMenu(){
     setActive(!active)
   }
-  
 
 
 
@@ -26,7 +25,6 @@ function Navbar() {
       </div>
     </nav>
     </header>
-
     <MenuItems showMenu={showMenu} active={active} />
 
 
